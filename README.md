@@ -5,15 +5,16 @@ Implementation of running variance/standard deviation (Welford 1962). This follo
 
 The same interface borrowed from [arma](http://arma.sourceforge.net/docs.html#running_stat) is implemented in several languages.
 
-
-|X(scalar) | update the statistics so far using the given scalar |
-|X.min()   | get the minimum value so far |
-|X.max()   | get the maximum value so far |
-|X.mean()  | get the mean or average value so far |
-|X.var()  and  X.var(norm_type) | get the variance so far |
-|X.stddev()  and  X.stddev(norm_type) | get the standard deviation so far |
-|X.reset()	 | reset all statistics and set the number of samples to zero |
-| X.count()	 | get the number of samples so far |
+function | comment
+--- | --- 
+X(scalar) | update the statistics so far using the given scalar 
+X.min()   | get the minimum value so far 
+X.max()   | get the maximum value so far 
+X.mean()  | get the mean or average value so far 
+X.var()  and  X.var(norm_type) | get the variance so far 
+X.stddev()  and  X.stddev(norm_type) | get the standard deviation so far 
+X.reset()	 | reset all statistics and set the number of samples to zero 
+ X.count()	 | get the number of samples so far 
 
 ## C++
 
