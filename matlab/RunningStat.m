@@ -4,7 +4,7 @@ classdef RunningStat < handle
         % Possible values are: {'mex', 'matlab'}
         %use_impl = 'mex';
         use_impl = 'matlab';
-     end
+    end
 
     properties (Access='private')
        % (running) sum of square deviations from mean
