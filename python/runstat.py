@@ -28,7 +28,7 @@ from math import sqrt
 from decimal import Decimal
 
 
-__version__ = '0.0.0'
+__version__ = '1.0.0'
 
 
 class RunStat(object):

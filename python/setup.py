@@ -135,14 +135,7 @@ def get_version():
 
 # ----------- Override defaults here ----------------
 
-scripts = [
-    'brainy',
-    'bin/brainy-daemon',
-    'bin/brainy-config',
-    'bin/brainy-frames',
-    'bin/brainy-project',
-    'bin/brainy-web',
-]
+scripts = []
 
 # packages = [
 #     'brainy',
@@ -155,7 +148,9 @@ scripts = [
 
 package_data = {'': ['*.html', '*.svg', '*.js']}
 
-if packages is None: packages = setuptools.find_packages('src')
+packages = ['.']
+
+if packages is None: packages = setuptools.find_packages('.')
 
 if len(packages) == 0: raise Exception("No valid packages found")
 
@@ -180,14 +175,13 @@ setuptools.setup(
         'Programming Language :: Python',
         'Programming Language :: Unix Shell',
         'Programming Language :: C++',
-        'Programming Language :: MATLAB',
         'Development Status :: 4 - Beta',
         'Operating System :: POSIX :: Linux',
         'Operating System :: MacOS',
     ],
     scripts=scripts,
     packages=packages,
-    package_dir={'': 'src'},
+    package_dir={'': '.'},
     package_data=package_data,
     include_package_data=True,
     download_url='https://github.com/ewiger/runstat/tarball/master',

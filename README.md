@@ -23,7 +23,31 @@ Use [arma](http://arma.sourceforge.net/docs.html#running_stat)
 
 ## python
 
+### Installation
+
 Pure python implementation.
+
+```
+pip install runstat
+```
+
+### Example
+
+```python
+from __future__ import print_function
+import numpy as np
+from runstat import RunStat
+
+rs = RunStat()
+
+X = np.random.rand(10)
+for x in X:
+    rs(x)
+
+print(rs.mean)
+print(rs.var)
+print(rs.std)
+```
 
 ## matlab
 
